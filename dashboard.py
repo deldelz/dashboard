@@ -12,6 +12,15 @@ from dateutil import parser
 st.set_page_config(page_title="UPI/Bank Statement Financial Manager", layout="wide", initial_sidebar_state="expanded")
 
 st.markdown(
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TYFH8Z4JBZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TYFH8Z4JBZ');
+</script>
     """
     <style>
     .stApp { background: #f6f9fc; font-family: Inter, Arial, sans-serif; }
