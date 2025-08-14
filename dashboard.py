@@ -9,7 +9,7 @@ import re
 from io import BytesIO
 from dateutil import parser
 
-st.set_page_config(page_title="UPI Financial Manager", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="UPI/Bank Statement Financial Manager", layout="wide", initial_sidebar_state="expanded")
 
 st.markdown(
     """
