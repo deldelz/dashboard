@@ -10,17 +10,22 @@ from io import BytesIO
 from dateutil import parser
 
 st.set_page_config(page_title="UPI/Bank Statement Financial Manager", layout="wide", initial_sidebar_state="expanded")
+GA_TRACKING_ID = "G-TYFH8Z4JBZ"
 
 st.markdown(
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TYFH8Z4JBZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    f"""
+    <script async src="https://www.googletagmanager.com/gtag/js?id={G-TYFH8Z4JBZ}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){{dataLayer.push(arguments);}}
+      gtag('js', new Date());
+      gtag('config', '{G-TYFH8Z4JBZ}');
+    </script>
+    """,
+    unsafe_allow_html=True
+)
 
-  gtag('config', 'G-TYFH8Z4JBZ');
-</script>
+st.markdown(
     """
     <style>
     .stApp { background: #f6f9fc; font-family: Inter, Arial, sans-serif; }
